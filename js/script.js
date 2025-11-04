@@ -51,3 +51,18 @@ function updateDateAndCalendar() {
 
 setInterval(updateDateAndCalendar, 60000);
 updateDateAndCalendar();
+
+
+let count = 3; // starting count
+    const counter = document.getElementById("count");
+
+    const timer = setInterval(() => {
+      count--;
+      counter.textContent = count;
+
+      if (count === 0) {
+        clearInterval(timer);
+        // redirect after countdown
+        window.location.href = "sos-screen.html"; // change this to your target page
+      }
+    }, 1000); // every 1 second
