@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapid ResQ OS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- LEFT SIDE -->
+      <div class="left-side">
+        <img src="images/watch.jpg" alt="Watch" class="watch-image" />
+
+        <!-- TIME -->
+        <div id="clock" class="watch-time"></div>
+
+        <!-- BATTERY -->
+        <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
+
+        <!-- SOS BUTTON -->
+        <img
+          src="images/sos-button.png"
+          alt="SOS Button"
+          class="sos-button"
+          onclick="window.location.href='sos-screen.html';"
+        />
+
+        <!-- ARROW BUTTON -->
+        <img
+          src="images/arrow.png"
+          alt="Arrow"
+          class="arrow-icon"
+          onclick="window.location.href='apps-first-screen.html';"
+        />
+
+        <img
+          src="images/rain.svg"
+          alt="weather"
+          class="weather-icon"
+          onclick="window.location.href='weather-page.html';"
+          style="cursor: pointer"
+        />
+        <div
+          id="watch-date"
+          class="watch-date"
+          onclick="window.location.href='calendar-page.html';"
+          style="cursor: pointer"
+        ></div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right-side">
+        <h1>Rapid ResQ OS</h1>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
