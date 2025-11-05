@@ -47,7 +47,7 @@ body {
 .weather-icon {
   position: absolute;
   top: 59%;
-  left: 38%;
+  left: 36%;
   width: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -60,7 +60,7 @@ body {
 .watch-date {
   position: absolute;
   top: 60%;
-  left: 42%;
+  left: 41%;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -71,9 +71,8 @@ body {
 .battery-icon {
   position: absolute;
   top: 28%;
-  left: 57%;
-  color: white;
-  width: 7%;
+  left: 60%;
+  width: 5%;
 }
 
 .arrow-icon {
@@ -130,7 +129,7 @@ body {
   transform: scale(1.2) rotate(1deg);
 }
 
-.calling-sos {
+.contact-sos {
   position: absolute;
   top: 46%;
   left: 49%;
@@ -146,14 +145,12 @@ body {
 @keyframes ring {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    
   }
   25% {
     transform: translate(-50%, -50%) rotate(3deg) scale(1.05, 0.95);
   }
   50% {
     transform: translate(-50%, -50%) rotate(-3deg) scale(0.95, 1.05);
-    
   }
   75% {
     transform: translate(-50%, -50%) rotate(2deg) scale(1.05, 0.95);
@@ -237,10 +234,10 @@ body {
 
 .calendar-date {
   position: absolute;
-  top: 36%;
+  top: 41%;
   left: 36%;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
@@ -281,3 +278,195 @@ body {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
+.filemanager-icon {
+  position: absolute;
+  top: 34%;
+  left: 36%;
+  width: 11%;
+}
+
+.maps-icon {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 13%;
+}
+
+.toggle-bluetooth {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 5%;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-bluetooth:hover {
+  background: #0056b3;
+}
+
+.data-icon {
+  position: absolute;
+  top: 28.3%;
+  left: 56.6%;
+  width: 2.9%;
+}
+
+.wifi-icon {
+  position: absolute;
+  top: 28.3%;
+  left: 54%;
+  width: 2.5%;
+}
+
+.bluetooth-icon {
+  position: absolute;
+  top: 28.3%;
+  left: 51.6%;
+  width: 1.5%;
+}
+
+.settings {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  width: 1.5%;
+}
+
+.settings-label {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 1.5%;
+  font-size: 15px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin: 15px 0;
+}
+
+/* Icon styles */
+.icon {
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+}
+
+/* Hide checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider track */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Circle knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When ON */
+input:checked + .slider {
+  background-color: #a855f7; /* 💜 Purple color */
+}
+
+/* Move knob when ON */
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.wifi-text {
+  position: absolute;
+  top: 35%;
+  left: 31%;
+  width: 15%;
+}
+
+.bluetooth-text {
+  position: absolute;
+  top: 43%;
+  left: 35%;
+  width: 15%;
+}
+
+.date-text{
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  width: 22%;
+}
+
+.heartrate-icon {
+  position: absolute;
+  top: 33%;
+  left: 51%;
+  width: 12%;
+}
+
+.phone-contacts {
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  width: 28%;}
+
+.playmusic-icon {
+  position: absolute;
+  top: 37%;
+  left: 36%;
+  width: 28%;}
+
+  .music-library {
+  position: absolute;
+  top: 45%;
+  left: 36%;
+  width: 28%;}
+
+  .songs-icon {
+  position: absolute;
+  top: 53%;
+  left: 36%;
+  width: 28%;}
+
+.elvis-music {
+  position: absolute;
+  top: 32%;
+  left: 40.1%;
+  width: 18%; }

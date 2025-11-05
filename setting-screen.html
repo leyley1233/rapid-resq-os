@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rapid ResQ OS</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <!-- LEFT SIDE -->
-      <div class="left-side">
-        <img src="images/watch.jpg" alt="Watch" class="watch-image" />
 
-        <!-- TIME -->
-        <div id="clock" class="watch-time"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid ResQ OS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-        <!-- BATTERY -->
-        <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
+<body>
+  <div class="container">
+    <!-- LEFT SIDE -->
+    <div class="left-side">
+      <img src="images/watch.jpg" alt="Watch" class="watch-image" />
 
-         <!-- ARROW BUTTON -->
-        <img
-          src="images/arrow.png"
-          alt="Arrow"
-          class="arrow-icon"
-          onclick="window.location.href='apps-second-screen.html';"/>
+      <!-- TIME -->
+      <div id="clock" class="watch-time"></div>
 
-          <!-- BACK ARROW BUTTON -->
-        <img
-          src="images/back-arrow.png"
-          alt="Arrow"
-          class="back-arrow"
-          onclick="window.location.href='apps-first-screen.html';"/>
+      <!-- BATTERY -->
+      <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
 
-        <!-- HOME -->
-        <img
-          src="images/home-icon.png"
-          alt="home"
-          class="home-icon"
-          onclick="window.location.href='index.html';"
-        />
+      <!-- DATA -->
+      <img src="images/data.png" alt="data" class="data-icon" />
+
+      <!-- WIFI -->
+      <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
+
+      <!-- BLUETOOTH -->
+      <img src="images/bluetooth.png" alt="bluetooth" class="bluetooth-icon" />
+
+       <!-- BLUETOOTH TEXT -->
+      <img src="images/bluetooth-text.png" alt="bluetooth" class="bluetooth-text"/>
+
+      <!-- WIFI TEXT -->
+      <img src="images/wifi-text.png" alt="wifi" class="wifi-text"/>
+
+       <!-- SET DATE & TIME -->
+      <img src="images/date-text.png" alt="date" class="date-text"/>
+
+      <!-- ARROW BUTTON -->
+      <img src="images/arrow.png" alt="Arrow" class="arrow-icon"
+        onclick="window.location.href='apps-second-screen.html';" />
+
+      <!-- BACK ARROW BUTTON -->
+      <img src="images/back-arrow.png" alt="Arrow" class="back-arrow"
+        onclick="window.location.href='apps-first-screen.html';" />
+      <div class="settings">
+        <div class="setting-item">
+
+          <label class="switch">
+            <input type="checkbox" id="wifiToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Bluetooth Toggle -->
+        <div class="setting-item">
+
+          <label class="switch">
+            <input type="checkbox" id="bluetoothToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
       </div>
-        
-      </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="right-side">
-        <h1>Rapid ResQ OS</h1>
-      </div>
+      <!-- HOME -->
+      <img src="images/home-icon.png" alt="home" class="home-icon" onclick="window.location.href='index.html';" />
     </div>
-    <script src="js/script.js"></script>
-  </body>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+    <h1>Rapid ResQ OS</h1>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
-
-

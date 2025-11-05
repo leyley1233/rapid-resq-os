@@ -18,7 +18,7 @@ function updateDateAndCalendar() {
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const day = String(date.getDate()).padStart(2, "0");
   const year = date.getFullYear();
-  const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const dayName = days[date.getDay()];
   const months = [
     "Jan",
@@ -46,23 +46,58 @@ function updateDateAndCalendar() {
 
   if (dateElement) dateElement.textContent = formattedDate;
   if (calendarElement) calendarElement.textContent = dateToday;
-
 }
 
 setInterval(updateDateAndCalendar, 60000);
 updateDateAndCalendar();
 
-
 let count = 3; // starting count
-    const counter = document.getElementById("count");
+const counter = document.getElementById("count");
 
-    const timer = setInterval(() => {
-      count--;
-      counter.textContent = count;
+const timer = setInterval(() => {
+  count--;
+  counter.textContent = count;
 
-      if (count === 0) {
-        clearInterval(timer);
-        // redirect after countdown
-        window.location.href = "sos-screen.html"; // change this to your target page
-      }
-    }, 1000); // every 1 second
+  if (count === 0) {
+    clearInterval(timer);
+    // redirect after countdown
+    window.location.href = "sos-screen.html"; // change this to your target page
+  }
+}, 1000); // every 1 second
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Wi-Fi
+  const wifiToggle = document.getElementById("wifiToggle");
+  const wifiIcon = document.querySelector(".wifi-icon");
+
+  // Bluetooth
+  const bluetoothToggle = document.getElementById("bluetoothToggle");
+  const bluetoothIcon = document.querySelector(".bluetooth-icon");
+
+  // ---- Load saved states ----
+  const wifiOn = localStorage.getItem("wifiOn") === "true";
+  const bluetoothOn = localStorage.getItem("bluetoothOn") === "true";
+
+  if (wifiToggle) wifiToggle.checked = wifiOn;
+  if (bluetoothToggle) bluetoothToggle.checked = bluetoothOn;
+
+  if (wifiIcon) wifiIcon.classList.toggle("hidden", !wifiOn);
+  if (bluetoothIcon) bluetoothIcon.classList.toggle("hidden", !bluetoothOn);
+
+  // ---- Event listeners ----
+  if (wifiToggle && wifiIcon) {
+    wifiToggle.addEventListener("change", () => {
+      const isOn = wifiToggle.checked;
+      wifiIcon.classList.toggle("hidden", !isOn);
+      localStorage.setItem("wifiOn", isOn);
+    });
+  }
+
+  if (bluetoothToggle && bluetoothIcon) {
+    bluetoothToggle.addEventListener("change", () => {
+      const isOn = bluetoothToggle.checked;
+      bluetoothIcon.classList.toggle("hidden", !isOn);
+      localStorage.setItem("bluetoothOn", isOn);
+    });
+  }
+});
