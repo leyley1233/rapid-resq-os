@@ -440,13 +440,6 @@ input:checked + .slider:before {
   width: 12%;
 }
 
-.phone-contacts {
-  position: absolute;
-  top: 35%;
-  left: 36%;
-  width: 28%;
-}
-
 .playmusic-icon {
   position: absolute;
   top: 39%;
@@ -731,6 +724,67 @@ input:checked + .slider:before {
   left: 49%;
   color: #fafafa;
   font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.title-contact {
+  position: absolute;
+  top: 34%;
+  left: 35%;
+  width: 28%;
+}
+
+.first-contact {
+  position: absolute;
+  top: 42%;
+  left: 49%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.first-contact:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.second-contact {
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  width: 28%; 
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.second-contact:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.third-contact {
+  position: absolute;
+   top: 56%;
+  left: 49%;
+  width: 28%; 
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.third-contact:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.contact-text {
+  position: absolute;
+  top: 36%;
+  left: 49%;
+  color: #fafafa;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   transform: translate(-50%, -50%);
