@@ -105,7 +105,7 @@ body {
 
 .home-icon {
   position: absolute;
-  top: 62%;
+  top: 64%;
   left: 46%;
   width: 6%;
   cursor: pointer;
@@ -163,7 +163,7 @@ body {
 
 .sos-button {
   position: absolute;
-  top: 48%;
+  top: 46%;
   left: 49%;
   width: 26%;
   transform: translate(-50%, -50%);
@@ -217,19 +217,15 @@ body {
   width: 12%;
 }
 
-/* RIGHT SIDE (Text) */
 .right-side {
   width: 50%;
   background-color: black;
-  color: #ff2d2d;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.right-side h1 {
-  font-size: 4rem;
-  font-weight: 800;
+  height: 100vh;
+  text-align: center;
 }
 
 .calendar-date {
@@ -384,7 +380,10 @@ body {
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
   border-radius: 34px;
@@ -427,7 +426,7 @@ input:checked + .slider:before {
   width: 15%;
 }
 
-.date-text{
+.date-text {
   position: absolute;
   top: 48%;
   left: 35%;
@@ -445,28 +444,295 @@ input:checked + .slider:before {
   position: absolute;
   top: 35%;
   left: 36%;
-  width: 28%;}
+  width: 28%;
+}
 
 .playmusic-icon {
   position: absolute;
-  top: 37%;
-  left: 36%;
-  width: 28%;}
+  top: 39%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
-  .music-library {
-  position: absolute;
-  top: 45%;
-  left: 36%;
-  width: 28%;}
+.playmusic-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
 
-  .songs-icon {
+.music-library {
   position: absolute;
-  top: 53%;
-  left: 36%;
-  width: 28%;}
+  top: 47%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.music-library:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.songs-icon {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.songs-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
 
 .elvis-music {
   position: absolute;
   top: 32%;
-  left: 40.1%;
-  width: 18%; }
+  left: 40%;
+  width: 18%;
+}
+
+.songs {
+  position: absolute;
+  top: 32%;
+  left: 29.5%;
+  width: 47%;
+}
+
+.playlist-songs {
+  position: absolute;
+  top: 33%;
+  left: 35%;
+  width: 38%;
+}
+
+.view-maps {
+  position: absolute;
+  top: 33%;
+  left: 35.7%;
+  width: 27%;
+}
+
+.internal-storage {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.internal-storage:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.watch-storage {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.watch-storage:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.download-files {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.download-files:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.audio-files {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.audio-files:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.pulse-text {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: rgb(254, 253, 253);
+}
+
+.pulse-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 100;
+  letter-spacing: 1px;
+}
+
+.pulse-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2px 0 0 0;
+  color: #ed8181;
+}
+
+.oxygen-text {
+  position: absolute;
+  top: 1%;
+  left: 165%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: rgb(254, 253, 253);
+}
+
+.oxygen-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.oxygen-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2px 0 0 0;
+  color: #ed8181;
+}
+
+/* Heart image */
+.heart {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  animation: beat 1s infinite ease-in-out;
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+    filter: drop-shadow(0 0 6px #ff3333aa);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.15);
+    filter: drop-shadow(0 0 18px #ff0000);
+  }
+}
+
+.title-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.nav-container {
+  display: flex; /* Horizontal alignment */
+  gap: 1rem; /* Spacing between buttons (Replaces space-x-4) */
+}
+
+/* .nav-button: Defines the round, light purple button (Replaces Tailwind button styling) */
+.nav-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ae0505;
+  color: #000000;
+
+  font-weight: 800;
+  font-size: 1.125rem;
+  border-radius: 50%; /* Perfectly round shape */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+/* HOVER AND FOCUS EFFECTS */
+.nav-button:hover {
+  background-color: #ffffff; /* Slightly darker purple on hover */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(254, 253, 255, 0.911); /* Focus ring */
+}
+
+.additional-button {
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.additional-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.hospital-button {
+  position: absolute;
+  top: 42%;
+  left: 43%;
+  width: 13%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hospital-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.mental-health-button {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  width: 13%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.emergency-text {
+  position: absolute;
+  top: 36%;
+  left: 49%;
+  color: #fafafa;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
