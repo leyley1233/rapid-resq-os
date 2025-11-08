@@ -19,7 +19,7 @@ body {
 .left-side {
   width: 50%;
   position: relative;
-  background-color: #111;
+  background-color: #000000;
 }
 
 .watch-image {
@@ -32,7 +32,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* TIME INSIDE WATCH */
 .watch-time {
   position: absolute;
   top: 28%;
@@ -44,7 +43,7 @@ body {
   text-align: center;
 }
 
-.weather-icon {
+.weather-button {
   position: absolute;
   top: 59%;
   left: 36%;
@@ -53,7 +52,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.weather-icon:active {
+.weather-button:active {
   transform: scale(1.2) rotate(1deg);
 }
 
@@ -191,23 +190,43 @@ body {
 
 .contacts {
   position: absolute;
-  top: 33%;
-  left: 35%;
-  width: 15%;
+  top: 41%;
+  left: 42%;
+  width: 15%; 
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.contacts:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
 .setting-icon {
   position: absolute;
-  top: 32%;
-  left: 48%;
+  top: 40%;
+  left: 55%;
   width: 16%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.setting-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .music-icon {
   position: absolute;
-  top: 48%;
-  left: 37%;
+  top: 55%;
+  left: 42%;
   width: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.music-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .counter-message {
@@ -215,17 +234,6 @@ body {
   top: 43%;
   left: 43%;
   width: 12%;
-}
-
-.right-side {
-  width: 50%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
 }
 
 .calendar-date {
@@ -277,16 +285,30 @@ body {
 
 .filemanager-icon {
   position: absolute;
-  top: 34%;
-  left: 36%;
+  top: 40%;
+  left: 42%;
   width: 11%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.filemanager-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .maps-icon {
   position: absolute;
-  top: 48%;
-  left: 50%;
+  top: 55%;
+  left: 55%;
   width: 13%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.maps-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .toggle-bluetooth {
@@ -435,9 +457,16 @@ input:checked + .slider:before {
 
 .heartrate-icon {
   position: absolute;
-  top: 33%;
-  left: 51%;
+  top: 40%;
+  left: 57%;
   width: 12%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heartrate-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .playmusic-icon {
@@ -644,11 +673,10 @@ input:checked + .slider:before {
 }
 
 .nav-container {
-  display: flex; /* Horizontal alignment */
-  gap: 1rem; /* Spacing between buttons (Replaces space-x-4) */
+  display: flex; 
+  gap: 1rem;
 }
 
-/* .nav-button: Defines the round, light purple button (Replaces Tailwind button styling) */
 .nav-button {
   width: 48px;
   height: 48px;
@@ -661,16 +689,15 @@ input:checked + .slider:before {
 
   font-weight: 800;
   font-size: 1.125rem;
-  border-radius: 50%; /* Perfectly round shape */
+  border-radius: 50%; 
   border: none;
   cursor: pointer;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out;
 }
 
-/* HOVER AND FOCUS EFFECTS */
 .nav-button:hover {
-  background-color: #ffffff; /* Slightly darker purple on hover */
+  background-color: #ffffff;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -789,4 +816,95 @@ input:checked + .slider:before {
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 10;
+}   
+  
+  .right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
 }
+
+.title-page {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.second-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.third-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fourth-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fifth-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.sixth-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.seventh-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buttons-inside {
+  position: absolute;
+  bottom: 20px; 
+  left: 85%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  top: 97%
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  background: #010000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.help-btn {
+  background: #da0303;
+}
+
+.weather-icon{
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  width: 12%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.weather-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+

@@ -101,3 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+function playHelpAndGo() {
+  const audio = document.getElementById('helpVoice');
+  audio.play(); // play sound
+
+  
+  setTimeout(() => {
+    window.location.href = 'counter-message.html';
+  }, 6000);}

@@ -44,45 +44,36 @@
         onclick="window.location.href='apps-first-screen.html';" />
 
       <!-- RAIN -->
-      <img src="images/rain.svg" alt="weather" class="weather-icon" onclick="window.location.href='weather-page.html';"
+      <img src="images/rain.svg" alt="weather" class="weather-button" onclick="window.location.href='weather-page.html';"
         style="cursor: pointer" />
       <div id="watch-date" class="watch-date" onclick="window.location.href='calendar-page.html';"
         style="cursor: pointer"></div>
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="right-side">
+<div class="right-side">
+  <div class="title-container">
+    <img src="images/title-page.png" alt="title-page" class="title-page"/>
 
-      <div class="nav-container">
+    <div class="buttons-inside">
+      <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+      <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+      <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+      <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+      <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+      <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+      <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
 
-        <!-- Buttons using the custom class -->
-        <button
-            onclick="window.location.href='index.html';"
-            class="nav-button"
-            aria-label="Go to slide 1"
-        >
-            1
-        </button>
-
-        <button
-            onclick="window.location.href='second-slide.html';"
-            class="nav-button"
-            aria-label="Go to slide 2"
-        >
-            2
-        </button>
-
-        <button
-            onclick="window.location.href='third-slide.html';"
-            class="nav-button"
-            aria-label="Go to slide 3"
-        >
-            3
-        </button>
-    </div>
-    </div>    
+      <button onclick="playHelpAndGo();" class="nav-btn help-btn"></button>
     </div>
   </div>
-  <script src="js/script.js"></script>
+</div>
+</div>
+
+<!-- 🔊 AUDIO FILE -->
+<audio id="helpVoice" src="sounds/helpme.mp4"></audio>
+
+<script src="js/script.js"></script>
 </body>
+
 </html>
