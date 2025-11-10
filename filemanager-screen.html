@@ -39,11 +39,12 @@
         <img src="images/watch-files.png" alt="watch-storage" class="watch-storage"/>
 
          <!-- DOWNLOAD FILES -->
-         <img src="images/download-files.png" alt="downloads" class="download-files"/>
+         <img src="images/download-files.png" alt="downloads" class="download-files"
+          onclick="window.location.href='downloads.html';"/>
 
          <!-- AUDIO FILES -->
-         <img src="images/music-files.png" alt="music" class="audio-files"/>
-
+         <img src="images/music-files.png" alt="music" class="audio-files"
+onclick="window.location.href='audio-files.html';"/>
         <!-- BLUETOOTH -->
         <img
           src="images/bluetooth.png"
@@ -67,14 +68,30 @@
         />
       </div>
         
-      </div>
-
       <!-- RIGHT SIDE -->
-      <div class="right-side">
-      </div>
+<div class="right-side">
+  <div class="title-container">
+     <img src="images/title-page.png" alt="title-page" class="title-page"/>
+     
+    <div class="buttons-inside">
+      <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+      <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+      <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+      <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+      <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+      <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+      <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
+
+      <button onclick="playHelpAndGo();" class="nav-btn help-btn"></button>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+</div>
+</div>
+
+<!--  AUDIO FILE -->
+<audio id="helpVoice" src="sounds/helpme.mp4"></audio>
+
+<script src="js/script.js"></script>
+</body>
+
 </html>
-
-

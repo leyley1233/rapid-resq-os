@@ -50,13 +50,6 @@
           class="bluetooth-icon"
         />
 
-         <!-- ARROW BUTTON -->
-        <img
-          src="images/arrow.png"
-          alt="Arrow"
-          class="arrow-icon"
-          onclick="window.location.href='apps-second-screen.html';"/>
-
         <!-- BACK ARROW BUTTON -->
         <img
           src="images/back-arrow.png"
@@ -71,16 +64,32 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
-      </div>
-        
-      </div>
-
+         </div>
       <!-- RIGHT SIDE -->
-      <div class="right-side">
-      </div>
-    </div>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+<div class="right-side">
+  <div class="title-container">
+     <img src="images/title-page.png" alt="title-page" class="title-page"/>
+     
+    <div class="buttons-inside">
+      <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+      <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+      <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+      <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+      <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+      <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+      <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
 
+      <button onclick="playHelpAndGo();" class="nav-btn help-btn"></button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 🔊 AUDIO FILE -->
+<audio id="helpVoice" src="sounds/helpme.mp4"></audio>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
 

@@ -23,9 +23,6 @@
         <!-- TIME -->
         <div id="clock" class="watch-time"></div>
 
-        <!-- TODO -->
-        <img src="images/to-do.png" alt="to-do" class="to-do" />
-
         <!-- BATTERY -->
         <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
 
@@ -42,8 +39,6 @@
           class="bluetooth-icon"
         />
 
-        <div id="calendar-date" class="calendar-date"></div>
-
         <!-- HOME -->
         <img
           src="images/home-icon.png"
@@ -51,12 +46,69 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
+
+      <div class="schedule-card">
+      <div class="header">
+        <i class="material-icons">chevron_left</i>
+        <div>November</div>
+        <i class="material-icons">chevron_right</i>
       </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="right-side">
+      <div class="dates">
+        <div class="date">10<br /><span>Mon</span></div>
+        <div class="date">11<br /><span>Tue</span></div>
+        <div class="date active">12<br /><span>Wed</span></div>
+        <div class="date">13<br /><span>Thu</span></div>
+        <div class="date">14<br /><span>Fri</span></div>
       </div>
+
+      <div class="meeting">
+        <h4>Team Sync</h4>
+        <p>08:30 am — 09:15 am</p>
+        <p>Conference Room B</p>
+      </div>
+
+      <div class="meeting">
+        <h4>Project Review</h4>
+        <p>01:00 pm — 02:00 pm</p>
+        <p>Meeting Room 3</p>
+      </div>
+
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <button class="add-btn">+</button>
+        </div>
+         </div>
+
+      <!-- RIGHT SIDE -->
+<div class="right-side">
+  <div class="title-container">
+     <img src="images/title-page.png" alt="title-page" class="title-page"/>
+     
+    <div class="buttons-inside">
+      <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+      <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+      <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+      <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+      <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+      <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+      <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
+
+      <button onclick="playHelpAndGo();" class="nav-btn help-btn"></button>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+</div>
+</div>
+
+<!-- AUDIO FILE -->
+<audio id="helpVoice" src="sounds/helpme.mp4"></audio>
+
+<script src="js/script.js"></script>
+</body>
+
 </html>
+

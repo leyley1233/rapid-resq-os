@@ -23,12 +23,12 @@
         <!-- TIME -->
         <div id="clock" class="watch-time"></div>
 
-        <!-- WEATHER -->
+        <!-- CALENDAR -->
         <img
-        src="images/rain.svg"
+        src="images/calendar-icon.png"
         alt="weather"
-        class="weather-icon"
-        onclick="window.location.href='weather-page.html';" />
+        class="calendar-icon"
+        onclick="window.location.href='second-calendar-page.html';" />
 
       />
 
@@ -57,12 +57,20 @@
          <img src="images/heartrate-icon.png" alt="heartrate"class="heartrate-icon"
         onclick="window.location.href='heartrate-screen.html';" />
 
-
+ <!-- BACK ARROW -->
         <img
           src="images/back-arrow.png"
           alt="Arrow"
           class="back-arrow"
           onclick="window.location.href='apps-first-screen.html';"/>
+
+           <!-- CLOCK -->
+        <img
+          src="images/clock-icon.png"
+          alt="clock"
+          class="clock-icon"
+          onclick="window.location.href='clock-screen.html';"
+        />
 
         <!-- HOME -->
         <img
@@ -72,15 +80,31 @@
           onclick="window.location.href='index.html';"
         />
       </div>
-        
-      </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="right-side">
-      </div>
+     <!-- RIGHT SIDE -->
+<div class="right-side">
+  <div class="title-container">
+     <img src="images/title-page.png" alt="title-page" class="title-page"/>
+     
+    <div class="buttons-inside">
+      <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+      <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+      <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+      <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+      <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+      <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+      <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
+
+      <button onclick="playHelpAndGo();" class="nav-btn help-btn"></button>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+</div>
+</div>
+
+<!-- 🔊 AUDIO FILE -->
+<audio id="helpVoice" src="sounds/helpme.mp4"></audio>
+
+<script src="js/script.js"></script>
+</body>
+
 </html>
-
-

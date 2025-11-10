@@ -22,6 +22,8 @@
 
         <!-- TIME -->
         <div id="clock" class="watch-time"></div>
+<div id="manilaTime" class="watch-time-manila"></div>
+
 
         <!-- BATTERY -->
         <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
@@ -32,9 +34,10 @@
         <!-- WIFI -->
         <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
 
-        <!-- PLAYLIST SONGS -->
-        <img src="images/playlist-song.png" alt="playlist" class="playlist-songs" />
-    
+         <!-- SHOW TIME -->
+        <img src="images/today.png" alt="clock" class="todays-update"
+          onclick="window.location.href='world-clock-screen.html';"/>
+
         <!-- BLUETOOTH -->
         <img
           src="images/bluetooth.png"
@@ -47,7 +50,9 @@
           src="images/back-arrow.png"
           alt="Arrow"
           class="back-arrow"
-          onclick="window.location.href='music-screen.html';"/>
+          onclick="window.location.href='clock-screen.html';"/>
+
+        <button class="plus">+</button>
 
         <!-- HOME -->
         <img
@@ -56,7 +61,7 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
-      </div>
+         </div>
       <!-- RIGHT SIDE -->
 <div class="right-side">
   <div class="title-container">
@@ -77,10 +82,11 @@
 </div>
 </div>
 
-<!-- 🔊 AUDIO FILE -->
+<!-- AUDIO FILE -->
 <audio id="helpVoice" src="sounds/helpme.mp4"></audio>
 
 <script src="js/script.js"></script>
 </body>
 
 </html>
+

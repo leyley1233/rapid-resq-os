@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +21,15 @@
       <div class="left-side">
         <img src="images/watch.jpg" alt="Watch" class="watch-image" />
 
+         <!-- BATTERY WIDGET INSIDE WATCH -->
+  <div class="battery-widget">
+    <div class="battery-percent">40%</div>
+    <div class="battery-info">Last Charged to 100%: <span>5h ago</span></div>
+    <div class="battery-bar">
+      <div class="battery-level"></div>
+    </div>
+  </div>
+  
         <!-- TIME -->
         <div id="clock" class="watch-time"></div>
 
@@ -32,9 +42,6 @@
         <!-- WIFI -->
         <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
 
-        <!-- PLAYLIST SONGS -->
-        <img src="images/playlist-song.png" alt="playlist" class="playlist-songs" />
-    
         <!-- BLUETOOTH -->
         <img
           src="images/bluetooth.png"
@@ -47,7 +54,7 @@
           src="images/back-arrow.png"
           alt="Arrow"
           class="back-arrow"
-          onclick="window.location.href='music-screen.html';"/>
+          onclick="window.location.href='setting-screen.html';"/>
 
         <!-- HOME -->
         <img
@@ -56,7 +63,8 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
-      </div>
+
+         </div>
       <!-- RIGHT SIDE -->
 <div class="right-side">
   <div class="title-container">
@@ -77,10 +85,11 @@
 </div>
 </div>
 
-<!-- 🔊 AUDIO FILE -->
+<!-- AUDIO FILE -->
 <audio id="helpVoice" src="sounds/helpme.mp4"></audio>
 
 <script src="js/script.js"></script>
 </body>
 
 </html>
+

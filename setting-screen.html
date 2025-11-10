@@ -19,63 +19,79 @@
       <!-- TIME -->
       <div id="clock" class="watch-time"></div>
 
-      <!-- BATTERY -->
+      <!-- ICONS -->
       <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
-
-      <!-- DATA -->
       <img src="images/data.png" alt="data" class="data-icon" />
-
-      <!-- WIFI -->
       <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
-
-      <!-- BLUETOOTH -->
       <img src="images/bluetooth.png" alt="bluetooth" class="bluetooth-icon" />
 
-       <!-- BLUETOOTH TEXT -->
-      <img src="images/bluetooth-text.png" alt="bluetooth" class="bluetooth-text"/>
-
-      <!-- WIFI TEXT -->
-      <img src="images/wifi-text.png" alt="wifi" class="wifi-text"/>
-
-       <!-- SET DATE & TIME -->
-      <img src="images/date-text.png" alt="date" class="date-text"/>
-
-      <!-- ARROW BUTTON -->
-      <img src="images/arrow.png" alt="Arrow" class="arrow-icon"
-        onclick="window.location.href='apps-second-screen.html';" />
+      <!-- TEXT LABELS -->
+      <img src="images/bluetooth-text.png" alt="bluetooth" class="bluetooth-text" />
+      <img src="images/wifi-text.png" alt="wifi" class="wifi-text" />
+      <img src="images/data-text.png" alt="data" class="data-text" />
+      <img src="images/location-text.png" alt="location" class="location-text" />
+      <img src="images/battery-text.png" alt="battery" class="battery-text"
+        onclick="window.location.href='battery-screen.html';" />
 
       <!-- BACK ARROW BUTTON -->
       <img src="images/back-arrow.png" alt="Arrow" class="back-arrow"
         onclick="window.location.href='apps-first-screen.html';" />
+
+      <!-- SETTINGS SWITCHES -->
       <div class="settings">
         <div class="setting-item">
-
           <label class="switch">
             <input type="checkbox" id="wifiToggle" />
             <span class="slider"></span>
           </label>
         </div>
 
-        <!-- Bluetooth Toggle -->
         <div class="setting-item">
-
           <label class="switch">
             <input type="checkbox" id="bluetoothToggle" />
             <span class="slider"></span>
           </label>
         </div>
+
+        <div class="setting-item">
+          <label class="switch">
+            <input type="checkbox" id="dataToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <label class="switch">
+            <input type="checkbox" id="locationToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
       </div>
 
-      <!-- HOME -->
-      <img src="images/home-icon.png" alt="home" class="home-icon" onclick="window.location.href='index.html';" />
+       <!-- HOME ICON -->
+      <img src="images/home-icon.png" alt="home" class="home-icon"
+        onclick="window.location.href='index.html';" />
     </div>
 
+    <!-- RIGHT SIDE -->
+    <div class="right-side">
+      <div class="title-container">
+        <img src="images/title-page.png" alt="title" class="title-page" />
+
+        <div class="buttons-inside">
+          <button onclick="window.location.href='index.html';" class="nav-btn">1</button>
+          <button onclick="window.location.href='second-slide.html';" class="nav-btn">2</button>
+          <button onclick="window.location.href='third-slide.html';" class="nav-btn">3</button>
+          <button onclick="window.location.href='fourth-slide.html';" class="nav-btn">4</button>
+          <button onclick="window.location.href='fifth-slide.html';" class="nav-btn">5</button>
+          <button onclick="window.location.href='sixth-slide.html';" class="nav-btn">6</button>
+          <button onclick="window.location.href='seventh-slide.html';" class="nav-btn">7</button>
+          <button onclick="window.location.href='counter-message.html';" class="nav-btn help-btn"></button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="right-side">
-  </div>
-  </div>
   <script src="js/script.js"></script>
 </body>
 

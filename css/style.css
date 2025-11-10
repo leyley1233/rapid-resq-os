@@ -15,7 +15,6 @@ body {
   width: 100%;
 }
 
-/* LEFT SIDE (Watch) */
 .left-side {
   width: 50%;
   position: relative;
@@ -30,17 +29,6 @@ body {
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-}
-
-.watch-time {
-  position: absolute;
-  top: 28%;
-  left: 35%;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
 }
 
 .weather-button {
@@ -140,7 +128,6 @@ body {
   box-shadow: 0 0 0 rgba(255, 59, 48, 0.7);
 }
 
-/* Elliptical "ringing" motion */
 @keyframes ring {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) scale(1);
@@ -214,6 +201,21 @@ body {
 .setting-icon:hover {
   transform: translate(-50%, -50%) scale(1.05);
 }
+
+.clock-icon {
+  position: absolute;
+  top: 55%;
+  left: 57%;
+  width: 13%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clock-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
 
 .music-icon {
   position: absolute;
@@ -311,23 +313,6 @@ body {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
-.toggle-bluetooth {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  width: 5%;
-  background: #007bff;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.toggle-bluetooth:hover {
-  background: #0056b3;
-}
 
 .data-icon {
   position: absolute;
@@ -349,6 +334,15 @@ body {
   left: 51.6%;
   width: 1.5%;
 }
+
+
+.location-icon {
+  position: absolute;
+  top: 28.3%;
+  left: 51.6%;
+  width: 1.5%;
+}
+
 
 .settings {
   position: absolute;
@@ -373,7 +367,6 @@ body {
   margin: 15px 0;
 }
 
-/* Icon styles */
 .icon {
   transition: opacity 0.3s ease;
 }
@@ -383,7 +376,6 @@ body {
   pointer-events: none;
 }
 
-/* Toggle Switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -391,14 +383,12 @@ body {
   height: 25px;
 }
 
-/* Hide checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* Slider track */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -411,7 +401,6 @@ body {
   border-radius: 34px;
 }
 
-/* Circle knob */
 .slider:before {
   position: absolute;
   content: "";
@@ -426,7 +415,7 @@ body {
 
 /* When ON */
 input:checked + .slider {
-  background-color: #a855f7; /* 💜 Purple color */
+  background-color: #a855f7; 
 }
 
 /* Move knob when ON */
@@ -443,17 +432,56 @@ input:checked + .slider:before {
 
 .bluetooth-text {
   position: absolute;
-  top: 43%;
+  top: 40.8%;
   left: 35%;
   width: 15%;
 }
 
-.date-text {
+.battery-text {
   position: absolute;
-  top: 48%;
-  left: 35%;
-  width: 22%;
+  top: 62%;
+  left: 41%;
+  width: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.battery-text:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+
+}
+
+.data-text {
+  position: absolute;
+  top: 56%;
+  left: 41%;
+  width: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.data-text:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+
+}
+
+.location-text {
+  position: absolute;
+  top: 50.5%;
+  left: 42%;
+  width: 12%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.location-text:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+
+}
+
 
 .heartrate-icon {
   position: absolute;
@@ -643,7 +671,6 @@ input:checked + .slider:before {
   color: #ed8181;
 }
 
-/* Heart image */
 .heart {
   position: absolute;
   top: 36%;
@@ -704,7 +731,7 @@ input:checked + .slider:before {
 
 .nav-button:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(254, 253, 255, 0.911); /* Focus ring */
+  box-shadow: 0 0 0 4px rgba(254, 253, 255, 0.911); 
 }
 
 .additional-button {
@@ -721,20 +748,6 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
-.hospital-button {
-  position: absolute;
-  top: 42%;
-  left: 43%;
-  width: 13%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.hospital-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
 .mental-health-button {
   position: absolute;
   top: 42%;
@@ -743,6 +756,10 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%);
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+.mental-health-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .emergency-text {
@@ -894,7 +911,7 @@ input:checked + .slider:before {
   background: #da0303;
 }
 
-.weather-icon{
+.calendar-icon{
   position: absolute;
   top: 55%;
   left: 42%;
@@ -904,7 +921,596 @@ input:checked + .slider:before {
   transition: transform 0.3s ease;
 }
 
-.weather-icon:hover {
+.calendar-icon:hover {
   transform: translate(-50%, -50%) scale(1.05);
+}
+
+.worldclock-icon {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.worldclock-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.alarm-icon {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.alarm-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.stopwatch-icon {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 28%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.stopwatch-icon:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.todays-update {
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  width: 28%;
+}
+
+.watch-time {
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.watch-time-manila {
+  position: absolute;
+  top: 41.3%; 
+  left: 51%;
+  color: #fbffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.set-alarm{
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  width: 28%;}
+
+  .alarm-item {
+  position: absolute;
+  top: 39%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin: 15px 0;
+}
+
+.icon {
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #a855f7; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.css-stopwatch {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 2px;
+  background: #fff;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(0deg);
+  border-radius: 2px;
+}
+
+.hour-hand {
+  height: 25%;
+  animation: rotateHour 43200s linear infinite;
+}
+
+.minute-hand {
+  height: 35%;
+  animation: rotateMinute 3600s linear infinite;
+}
+
+.second-hand {
+  height: 45%;
+  background: #ff0000;
+  animation: rotateSecond 60s linear infinite; 
+}
+
+.center-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateSecond {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes rotateMinute {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes rotateHour {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+.digital-stopwatch {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@keyframes count {
+  0% { content: '00'; }
+  10% { content: '01'; }
+  20% { content: '02'; }
+  30% { content: '03'; }
+  40% { content: '04'; }
+  50% { content: '05'; }
+  60% { content: '06'; }
+  70% { content: '07'; }
+  80% { content: '08'; }
+  90% { content: '09'; }
+  100% { content: '00'; }
+}
+
+.seconds::after {
+  content: '00';
+  animation: count 10s linear infinite;
+}
+
+.play-pause-container {
+  position: absolute;
+  top: 58%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+#toggle {
+  display: none;
+}
+
+.play-pause-container {
+  position: absolute;
+  top: 58%;          
+  left: 50%;         
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;          
+  z-index: 20;
+}
+
+.circle-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(16, 233, 30);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgb(35, 195, 14);
+  transition: all 0.3s ease;
+}
+
+.circle-btn::after {
+  content: "Play";
+}
+
+#toggle:checked + .circle-btn {
+  background-color: rgb(226, 4, 4);
+  box-shadow: 0 0 25px rgb(253, 59, 10);
+}
+
+#toggle:checked + .circle-btn::after {
+  content: "Pause";
+}
+
+.reset-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 0 20px #007bff;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #3399ff;
+  box-shadow: 0 0 30px #3399ff;
+}
+   .battery-widget {
+  position: absolute;       
+  top: 47%;                 
+  left: 48%;                
+  transform: translate(-50%, -50%); 
+  color: white;
+  border-radius: 16px;       
+  padding: 16px 18px;        
+  width: 170px;                
+}
+
+.battery-percent {
+  font-size: 65px;           
+  font-weight: 700;
+}
+
+.battery-info {
+  font-size: 15px;           
+  color: #9a9a9a;
+  margin-top: 15px;          
+}
+
+.battery-info span {
+  color: #9a9a9a;
+}
+
+.battery-bar {
+  width: 120%;
+  height: 6px;               
+  background-color: #2c2c2e;
+  border-radius: 4px;        
+  margin-top: 8px;           
+  overflow: hidden;
+}
+
+.battery-level {
+  height: 100%;
+  width: 40%;                
+  background: linear-gradient(90deg, #6ddc6e, #4cd964);
+  border-radius: 4px;        
+  transition: width 0.5s ease;
+}
+
+.schedule-card {
+  width: 180px;
+  height: 180px;
+  left: 36%;
+  top: 33%;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cb44f0;
+  font-weight: 1;
+  margin-bottom: 2px;
+}
+
+.header i {
+  font: size 0.2em;
+  cursor: pointer;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 0;
+}
+
+.date {
+  text-align: center;
+  color: #a0a0a0;
+  font-weight: 100%;
+  font-size: 60%;
+  width: 30px;
+  padding: 9px 0;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+
+.date.active {
+  background: linear-gradient(135deg, #a10b9a, #5c087d);
+  color: white;
+  box-shadow: 0 5px 10px rgba(140, 17, 128, 0.3);
+}
+
+.meeting {
+  background: #f5f9ff;
+  border-left: 4px solid #db17aa;
+  border-radius: 4px;
+  padding: 1px 3px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meeting:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(45, 1, 50, 0.2);
+}
+
+.meeting h4 {
+  margin: 1;
+  font-size: 8px;
+  color: #9f1195;
+}
+
+.meeting p {
+  margin: 0.1px 0;
+  color: #5b5b5b;
+  font-size: 9px;
+}
+
+.add-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(135deg, #860cd2, #83089f);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 120, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: glow 2.5s infinite ease-in-out;
+}
+
+.add-btn:hover {
+  transform: rotate(90deg) scale(1.15);
+  box-shadow: 0 8px 25px rgba(163, 8, 180, 0.5);
+  background: linear-gradient(135deg, #e703c8, #a50da2);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(207, 19, 236, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(165, 7, 152, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(89, 5, 89, 0.5);
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background: #cfd8e8;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #8e0ba8;
+}
+
+/* PLUS BUTTON (Animated Floating Button) */
+.plus {
+  position: absolute;
+  top: 33%;        /* adjust position on watch */
+  left: 58%;         /* move left/right as needed */
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f91a55; /* Messenger blue */
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  z-index: 5; /* Make sure it stays on top of the watch image */
+}
+
+.plus:hover {
+  transform: rotate(180deg) scale(1.1);
+  background-color: #c414b8;
+}
+
+  .location-item {
+  position: absolute;
+  top: 1%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin: 15px 0;
+}
+
+.icon {
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #a855f7; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
 }
 

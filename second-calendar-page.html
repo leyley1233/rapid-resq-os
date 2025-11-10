@@ -32,9 +32,6 @@
         <!-- WIFI -->
         <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
 
-        <!-- PLAYLIST SONGS -->
-        <img src="images/playlist-song.png" alt="playlist" class="playlist-songs" />
-    
         <!-- BLUETOOTH -->
         <img
           src="images/bluetooth.png"
@@ -47,7 +44,8 @@
           src="images/back-arrow.png"
           alt="Arrow"
           class="back-arrow"
-          onclick="window.location.href='music-screen.html';"/>
+          onclick="window.location.href='apps-second-screen.html';"/>
+          
 
         <!-- HOME -->
         <img
@@ -56,7 +54,44 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
+
+      <div class="schedule-card">
+      <div class="header">
+        <i class="material-icons">chevron_left</i>
+        <div>November</div>
+        <i class="material-icons">chevron_right</i>
       </div>
+
+      <div class="dates">
+        <div class="date">10<br /><span>Mon</span></div>
+        <div class="date">11<br /><span>Tue</span></div>
+        <div class="date active">12<br /><span>Wed</span></div>
+        <div class="date">13<br /><span>Thu</span></div>
+        <div class="date">14<br /><span>Fri</span></div>
+      </div>
+
+      <div class="meeting">
+        <h4>Team Sync</h4>
+        <p>08:30 am — 09:15 am</p>
+        <p>Conference Room B</p>
+      </div>
+
+      <div class="meeting">
+        <h4>Project Review</h4>
+        <p>01:00 pm — 02:00 pm</p>
+        <p>Meeting Room 3</p>
+      </div>
+
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <button class="add-btn">+</button>
+        </div>
+         </div>
+         
       <!-- RIGHT SIDE -->
 <div class="right-side">
   <div class="title-container">
@@ -77,10 +112,11 @@
 </div>
 </div>
 
-<!-- 🔊 AUDIO FILE -->
+<!-- AUDIO FILE -->
 <audio id="helpVoice" src="sounds/helpme.mp4"></audio>
 
 <script src="js/script.js"></script>
 </body>
 
 </html>
+

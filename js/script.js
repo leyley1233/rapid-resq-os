@@ -1,3 +1,4 @@
+// ---- LOCAL TIME ----
 function updateClock() {
   const now = new Date();
   let hours = now.getHours();
@@ -12,6 +13,25 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+
+// ---- MANILA TIME ----
+function updateManilaTime() {
+  const now = new Date();
+  const options = { 
+    timeZone: "Asia/Manila", 
+    hour: "2-digit", 
+    minute: "2-digit", 
+
+    hour12: true 
+  };
+  const manilaTime = new Intl.DateTimeFormat("en-US", options).format(now);
+  const manilaElement = document.getElementById("manilaTime");
+  if (manilaElement) manilaElement.textContent = manilaTime;
+}
+
+setInterval(updateManilaTime, 1000);
+updateManilaTime();
 
 function updateDateAndCalendar() {
   const date = new Date();

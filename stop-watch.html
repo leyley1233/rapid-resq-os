@@ -23,6 +23,30 @@
         <!-- TIME -->
         <div id="clock" class="watch-time"></div>
 
+       <!-- CSS Stopwatch -->
+<div class="css-stopwatch">
+  <div class="hand hour-hand"></div>
+  <div class="hand minute-hand"></div>
+  <div class="hand second-hand"></div>
+  <div class="center-dot"></div>
+</div>
+
+
+<div class="digital-stopwatch">
+  <div class="digits">
+    <span class="hours">00</span> :
+    <span class="minutes">00</span> :
+    <span class="seconds"></span>
+  </div>
+</div>
+  <div class="play-pause-container">
+  <input type="checkbox" id="toggle">
+  <label for="toggle" class="circle-btn"></label>
+    <button class="reset-btn">Reset</button>
+
+</div>
+
+
         <!-- BATTERY -->
         <img src="images/battery-icon.png" alt="battery" class="battery-icon" />
 
@@ -32,9 +56,6 @@
         <!-- WIFI -->
         <img src="images/wifi.png" alt="wifi" class="wifi-icon" />
 
-        <!-- PLAYLIST SONGS -->
-        <img src="images/playlist-song.png" alt="playlist" class="playlist-songs" />
-    
         <!-- BLUETOOTH -->
         <img
           src="images/bluetooth.png"
@@ -47,7 +68,7 @@
           src="images/back-arrow.png"
           alt="Arrow"
           class="back-arrow"
-          onclick="window.location.href='music-screen.html';"/>
+          onclick="window.location.href='clock-screen.html';"/>
 
         <!-- HOME -->
         <img
@@ -56,7 +77,7 @@
           class="home-icon"
           onclick="window.location.href='index.html';"
         />
-      </div>
+         </div>
       <!-- RIGHT SIDE -->
 <div class="right-side">
   <div class="title-container">
@@ -77,10 +98,11 @@
 </div>
 </div>
 
-<!-- 🔊 AUDIO FILE -->
+<!-- AUDIO FILE -->
 <audio id="helpVoice" src="sounds/helpme.mp4"></audio>
 
 <script src="js/script.js"></script>
 </body>
 
 </html>
+
